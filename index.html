@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>There is nothing here...</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: rgba(255, 255, 255, 0.1);
+            --background-color: #121212;
+            --text-color: #121212;
+            --hover-color: rgba(255, 255, 255, 0.2);
+            --active-color: rgba(255, 255, 255, 0.3);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            color:#ffffff;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--primary-color);
+            color: var(--text-color);
+            border: 1px solid var(--text-color);
+            padding: 14px 28px;
+            font-size: 1.3rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .button:hover {
+            background: var(--hover-color);
+        }
+        .button:active {
+            background: var(--active-color);
+        }
+        .button .material-icons {
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>There is nothing here...</h1>
+    <div class="buttons">
+        <a href="https://bio.fajox.one" class="button"><span class="material-icons">person</span> Bio</a>
+        <a href="https://portfolio.fajox.one" class="button"><span class="material-icons">work</span> Portfolio</a>
+    </div>
+</body>
+</html>
